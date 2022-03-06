@@ -1,4 +1,8 @@
-import { Box, Grommet } from 'grommet';
+import { Grommet } from 'grommet';
+import { Route, Routes } from 'react-router-dom';
+
+import { Home } from 'views/Home';
+import { Portuguese } from 'views/Portuguese';
 
 const theme = {
   global: {
@@ -12,18 +16,11 @@ const theme = {
 
 export const App = () => {
   return (
-    <Grommet theme={theme}>
-      <Box direction="row" justify="center" fill="vertical" margin="medium">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/fCn8zs912OE"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          frameBorder="0"
-        />
-      </Box>
+    <Grommet theme={theme} themeMode="dark">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="portuguese" element={<Portuguese />} />
+      </Routes>
     </Grommet>
   );
 };
