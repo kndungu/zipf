@@ -24,11 +24,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "prettier"
-    ]
-  },
   "prettier": {
     "trailingComma": "none",
     "singleQuote": true
@@ -44,9 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^8.4.0",
-    "prettier": "^2.5.1"
   }
 }
