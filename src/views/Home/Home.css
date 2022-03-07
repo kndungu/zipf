@@ -1,0 +1,18 @@
+.videoContainer {
+  width: 100%;
+  max-width: 560px;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
